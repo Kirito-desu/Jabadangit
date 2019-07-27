@@ -7,14 +7,14 @@ require("UserModel.php");
 // var_dump($model->insert());
 
 //Case2: updating record
-// echo "Case 2 result: ";
-// var_dump($model->update(4));
-// echo "Name Updated";
+echo "Case 2 result: ";
+var_dump($model->update(4));
+echo "Name Updated";
 
 
 //Case3: Read All record
-echo "Case 3 result: ";
-var_dump($model->readAll());
+// echo "Case 3 result: ";
+// var_dump($model->readAll());
 
 //Case4: Delete record
 // echo "Case 4 result: ";

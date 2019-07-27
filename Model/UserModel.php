@@ -6,7 +6,7 @@ class UserModel{
     public $username;
     public $password;
     public $id;
-    private $db;
+    private $dbOj;
     private $tablename = "tbluser";
 
 
