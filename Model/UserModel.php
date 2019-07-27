@@ -6,7 +6,7 @@ class UserModel{
     public $username;
     public $password;
     public $id;
-    private $db;
+    private $dbOj;
     private $tablename = "tbluser";
 
 
@@ -23,7 +23,7 @@ class UserModel{
             
     }
     public function update($id){
-        $sql = "UPDATE tbluser SET name='Melvin J' WHERE id=$id";
+        $sql = "UPDATE tbluser SET name=$this->name, email=$this->email, username=$this->username, password=$this->password WHERE id=$this->id";
         if($this->dbObj->execute($sql)){
             return true;
         }else{
